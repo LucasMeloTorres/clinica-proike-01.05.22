@@ -1,0 +1,379 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: bolde;
+    src: url(fontes/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(fontes/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(fontes/Montserrat-Light.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --azulagua: #21F0B5;
+    --verdetifane: #0CF76E;
+    --verdeclaro: #41F70C;
+    --verdeamarelo: #96F011;
+    --verdeescuro: #00E01A;
+    --verdeescuroforte: #0C610B;
+
+}
+
+body{
+    background-color: #62636215;
+}
+
+/*ESTILO MENU*/
+.boxmenu nav{
+    background-image: linear-gradient(to left, #21F0B5, #96F011);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.274);
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-right: 50px;
+    
+}
+
+.menu a{
+    color: var(--verdeescuroforte);
+    text-decoration: none;
+    font-family: bolde;
+    padding: 34px 30px;
+}
+.menu a:hover{
+    background-color: var(--azulagua);
+    color: white;
+    transition: 0.5s;
+    border-bottom: 5px solid var(--verdeescuroforte);
+}
+
+.logo{
+    width: 100px;
+    margin-left: 30px;
+}
+
+/*ESTILO BENNER*/
+.boxbanner{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(imagens/moldebanner\ 021440x450.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 485px;
+    background-position: bottom left;
+    background-size: cover;
+    border-bottom: 8px solid var(--verdeescuroforte);
+    box-shadow: 2px 2px 5px rgba(53, 53, 53, 0.288);
+}
+
+.textobanner{
+    display: block;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.textobanner h1 p{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.267);
+}
+
+.textobanner h1{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: bolde;
+    color: var(--verdeescuroforte);
+    font-size: 3rem;
+}
+
+.boxbanner p{
+    font-family: light;
+    font-size: 2rem;
+    color: var(--verdeescuroforte);
+    margin-bottom: 40px;
+}
+
+.botao{
+    font-family: bolde;
+    text-decoration: none;
+    color: var(--verdeescuroforte);
+    background-color: var(--verdeamarelo);
+    padding: 15px 30px;
+    border: 3px solid var(--verdeescuroforte);
+    border-radius: 35px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+}
+
+.botao:hover{
+    color: var(--verdeamarelo);
+    background-color: var(--verdeescuroforte);
+    transition: 0.5s;
+}
+
+/*ESTILO FLEXBOX TRATAMENTOS*/
+
+.legenda{
+    font-family: bolde;
+    color: var(--verdeescuroforte);
+    margin: 0px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.contorno{
+    margin: 0px auto;
+    padding: 5px;
+    width: 200px;
+    border-bottom: 3px solid var(--verdeescuroforte);
+}
+
+.flex img{
+    max-width: 100%; /* almentar no máximo 100% da tela, RESPONSIVE*/
+    display: block;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap; /* pode quebrar de acordo com o tamnho da tela*/
+    max-width: 800px; /* segurar o container no tamanho maximo da caixa*/
+    margin: 0 auto; /* centralizar na pagina*/
+}
+
+.flexbox{
+    flex: 1 1 200px;
+    margin: 15px; /* distancia entre as margens*/
+    padding: 10px;
+    background-color: rgba(223, 219, 219, 0.24);
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.192);
+}
+
+.flex p{
+    font-family: regular;
+    color: var(--verdeescuroforte);
+    background-color: var(--verdetifane);
+    padding: 8px;
+    text-align: center;
+}
+
+.flex a{
+    text-decoration: none;
+}
+
+.flex p:hover{
+    background-color: var(--verdeamarelo);
+}
+
+/*ESTILO FLEXBOX CONVENIO*/
+
+.legenda{ /*legenda do H2*/
+    font-family: bolde;
+    color: var(--verdeescuroforte);
+    margin: 0px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.contorno{ /*contorno do H2*/
+    margin: 0px auto;
+    padding: 5px;
+    width: 200px;
+    border-bottom: 3px solid var(--verdeescuroforte);
+}
+
+.flexconvenio img{
+    max-width: 100%; /* almentar no máximo 100% da tela, RESPONSIVE*/
+    display: block;
+}
+
+.flexconvenio{
+    display: flex;
+    flex-wrap: wrap; /* pode quebrar de acordo com o tamnho da tela*/
+    /* segurar o container no tamanho maximo da caixa*/
+    margin: 0px auto; /* centralizar na pagina*/
+    background-image: linear-gradient(to left, #21F0B5, #96F011);
+}
+
+.flexconvenio .flexboxconvenio{
+    flex: 1 1 100px;
+    margin: 5px; /* distancia entre as margens*/
+    padding: 10px;
+    background-color: rgba(223, 219, 219, 0.24);
+    border-radius: 2px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.192);
+}
+
+/*ESTILO FLEXBOX CONTATOS*/
+
+.flexcontatos{
+    max-width: 100%;
+    background-image: url(imagens/sorriso.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+/*Sombra pra dentro*/
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.281);
+/*Efeito Paralax*/
+    background-attachment: fixed;
+}
+
+.contatos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #96F011;
+    margin: 30px;
+}
+
+.contatos img{
+    width: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contatos p{
+    font-family: bolde;
+    color: var(--verdeescuroforte);
+    margin-left: 50px;
+}
+
+.avatar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--verdeamarelo);
+    margin: 30px;
+}
+
+.avatar p{
+    font-family: bolde;
+    color: var(--verdeescuroforte);
+    margin-left: 50px;
+}
+
+.avatar img{
+    width: 100px;
+    padding: 10px;
+}
+
+/*
+.boxcontato{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(imagens/wallpaper006.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    background-position: bottom left;
+    background-size: cover;
+    border-top: 8px solid var(--verdeescuroforte);
+    border-bottom: 8px solid var(--verdeescuroforte);
+    box-shadow: 2px 2px 5px rgba(53, 53, 53, 0.288);
+}
+
+.textobanner{
+    display: block;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.textobanner h1 p{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.267);
+}
+
+.textobanner h1{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: bolde;
+    color: var(--verdeescuroforte);
+    font-size: 3rem;
+}
+
+.boxboxcontato p{
+    font-family: light;
+    font-size: 2rem;
+    color: var(--verdeescuroforte);
+    margin-bottom: 40px;
+}
+
+.botao{
+    font-family: bolde;
+    text-decoration: none;
+    color: var(--verdeescuroforte);
+    background-color: var(--verdeamarelo);
+    padding: 15px 30px;
+    border: 3px solid var(--verdeescuroforte);
+    border-radius: 35px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+}
+
+.botao:hover{
+    color: var(--verdeamarelo);
+    background-color: var(--verdeescuroforte);
+    transition: 0.5s;
+}
+*/
+
+/*ESTILO RODAPE*/
+
+.rodape{
+    width: 0px auto;
+    background-color: var(--verdeescuro);
+    margin-top: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dev{
+    font-family: light;
+    text-align: center;
+    color: white;
+    background-color: var(--verdeescuroforte);
+    padding: 5px;
+    margin-bottom: -0px;
+}
+
+.rodape a{
+    font-family: light;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.rodape a:hover{
+    color: white;
+    transition: 0.5s;
+}

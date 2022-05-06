@@ -31,7 +31,8 @@
 }
 
 body{
-    background-color: #62636215;
+    max-width: 1800px;
+    margin: 0px auto;
 }
 
 /*ESTILO MENU*/
@@ -158,7 +159,7 @@ ul{
 .flex{
     display: flex;
     flex-wrap: wrap; /* pode quebrar de acordo com o tamnho da tela*/
-    max-width: 800px; /* segurar o container no tamanho maximo da caixa*/
+    max-width: 1000px; /* segurar o container no tamanho maximo da caixa*/
     margin: 0 auto; /* centralizar na pagina*/
 }
 
